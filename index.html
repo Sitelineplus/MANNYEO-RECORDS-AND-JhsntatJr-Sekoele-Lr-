@@ -1,40 +1,72 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mannyeo Records</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MManyeo Records & Leqophe LR | Official Music</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+        audio::-webkit-media-controls-panel {
+            background-color: #4b0082;
+        }
+        audio {
+            width: 100%;
+            outline: none;
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>Mannyeo Records</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Songs</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-    </nav>
-  </header>
+<body class="bg-gray-900 text-white font-montserrat">
+    <custom-navbar></custom-navbar>
+    
+    <main class="container mx-auto px-4 py-8">
 
-  <main>
-    <section class="hero">
-      <h2>Latest Release: “Track Name”</h2>
-      <button>Listen Now</button>
-    </section>
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden rounded-xl mb-16">
+            <div id="vanta-bg" class="absolute inset-0"></div>
+            <div class="relative z-10 flex flex-col items-center justify-center min-h-[60vh] px-4 text-center bg-black bg-opacity-60">
+                <h1 class="text-6xl md:text-8xl font-bebas tracking-wider mb-6">
+                    MMANYEO <span class="text-purple-500">RECORDS</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-2xl">Presenting the groundbreaking sounds of Leqophe LR</p>
+                <a href="#music" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105">
+                    Explore Music
+                </a>
+            </div>
+        </section>
 
-    <section class="songs">
-      <h3>All Songs</h3>
-      <div class="song-list">
-        <!-- Add song cards here -->
-      </div>
-    </section>
-  </main>
+        <!-- 🎵 Music Section -->
+        <section id="music" class="mb-16">
+            <h2 class="text-4xl font-bebas mb-8 text-center">Latest Releases</h2>
 
-  <footer>
-    <p>© 2025 Mannyeo Records</p>
-  </footer>
-</body>
-</html>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Song 1 -->
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-2xl font-bold mb-2">Halaloya</h3>
+                    <p class="text-gray-400 mb-4">Leqophe LR</p>
+                    <audio controls>
+                        <source src="music/Halaloya.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <!-- Song 2 -->
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-2xl font-bold mb-2">Halepone Lempona Hale Benya</h3>
+                    <p class="text-gray-400 mb-4">Leqophe LR</p>
+                    <audio controls>
+                        <source src="music/Halepone lempone hale benya.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <!-- Song 3 -->
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-2xl font-bold mb-2">Hela Buty</h3>
+                    <p class="text-gray-400 mb-4">Leqophe LR</p>
+                    <audio controls>
+
