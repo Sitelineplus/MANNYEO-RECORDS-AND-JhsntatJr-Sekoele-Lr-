@@ -24,7 +24,6 @@
     
     <main class="container mx-auto px-4 py-8">
 
-        <!-- Hero Section -->
         <section class="relative overflow-hidden rounded-xl mb-16">
             <div id="vanta-bg" class="absolute inset-0"></div>
             <div class="relative z-10 flex flex-col items-center justify-center min-h-[60vh] px-4 text-center bg-black bg-opacity-60">
@@ -38,13 +37,11 @@
             </div>
         </section>
 
-        <!-- 🎵 Music Section -->
         <section id="music" class="mb-16">
             <h2 class="text-4xl font-bebas mb-8 text-center">Latest Releases</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- Song 1 -->
                 <div class="bg-gray-800 rounded-xl p-6">
                     <h3 class="text-2xl font-bold mb-2">Halaloya</h3>
                     <p class="text-gray-400 mb-4">Leqophe LR</p>
@@ -54,7 +51,6 @@
                     </audio>
                 </div>
 
-                <!-- Song 2 -->
                 <div class="bg-gray-800 rounded-xl p-6">
                     <h3 class="text-2xl font-bold mb-2">Halepone Lempona Hale Benya</h3>
                     <p class="text-gray-400 mb-4">Leqophe LR</p>
@@ -64,9 +60,53 @@
                     </audio>
                 </div>
 
-                <!-- Song 3 -->
                 <div class="bg-gray-800 rounded-xl p-6">
                     <h3 class="text-2xl font-bold mb-2">Hela Buty</h3>
                     <p class="text-gray-400 mb-4">Leqophe LR</p>
                     <audio controls>
+                        <source src="music/HelaButy.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </section>
 
+        <section id="about" class="mb-16 pt-8">
+            <h2 class="text-4xl font-bebas mb-8 text-center">About</h2>
+            <div class="max-w-4xl mx-auto bg-purple-900 bg-opacity-30 rounded-xl p-8 shadow-2xl">
+                <p class="text-lg leading-relaxed text-gray-200">
+                    Get ready to be swept away by the sonic landscapes of Mannyeo Records and Leqophe Lr , a fresh voice in the music scene. Hailing from [Pitseng], this dynamic group blends genres to create a unique sound that's both nostalgic and forward-thinking. Explore their music, watch exclusive performances, and stay tuned for upcoming shows
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 py-6 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg mb-2">Content Info / Bookings</p>
+            <p class="text-3xl font-bold text-purple-400 font-bebas tracking-wider">
+                +266 59620340
+            </p>
+            <p class="text-sm text-gray-500 mt-4">&copy; 2025 Mannyeo Records & Leqophe LR. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        
+        VANTA.WAVES({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x4B0082, 
+            waveHeight: 15,
+            zoom: 0.65
+        })
+    </script>
+</body>
+                </html>
